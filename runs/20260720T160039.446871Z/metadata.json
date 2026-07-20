@@ -1,0 +1,188 @@
+{
+  "created_at_utc": "2026-07-20T16:00:39.447375+00:00",
+  "emulator_kind": "lime3ds",
+  "window": {
+    "title": "Lime3DS 2119.1 | Pok\u00e9mon Omega Ruby",
+    "pid": 28476,
+    "process_name": "lime3ds.exe",
+    "process_path": "C:\\Users\\Public\\Documents\\WinDS PRO\\emu\\lime3ds\\lime3ds.exe",
+    "score": 550,
+    "reasons": [
+      "title: lime3ds, pok\u00e9mon omega ruby, omega ruby",
+      "exact process: lime3ds.exe",
+      "Lime3DS process hint",
+      "3DS process hint",
+      "ORAS game title",
+      "client: 1870x824"
+    ]
+  },
+  "client_area": {
+    "hwnd": 134862,
+    "title": "Lime3DS 2119.1 | Pok\u00e9mon Omega Ruby",
+    "pid": 28476,
+    "process_name": "lime3ds.exe",
+    "process_path": "C:\\Users\\Public\\Documents\\WinDS PRO\\emu\\lime3ds\\lime3ds.exe",
+    "left": 1562,
+    "top": 51,
+    "width": 1870,
+    "height": 824
+  },
+  "config": {
+    "emulator": {
+      "kind": "lime3ds",
+      "window": {
+        "title_contains_any": [
+          "Lime3DS",
+          "Lime 3DS",
+          "Pok\u00e9mon Omega Ruby",
+          "Pokemon Omega Ruby",
+          "Pok\u00e9mon Alpha Sapphire",
+          "Pokemon Alpha Sapphire",
+          "Omega Ruby",
+          "Alpha Sapphire"
+        ],
+        "title_excludes": [
+          "WinDS PRO",
+          "WinDS PRO FX"
+        ],
+        "process_names": [
+          "lime-qt.exe",
+          "lime.exe",
+          "lime3ds.exe",
+          "citra-qt.exe"
+        ],
+        "minimum_client_width": 320,
+        "minimum_client_height": 240,
+        "wait_timeout_seconds": 90,
+        "poll_interval_seconds": 0.5
+      },
+      "launcher": {
+        "title_contains_any": [
+          "WinDS PRO",
+          "WinDS PRO FX"
+        ]
+      },
+      "gdb": {
+        "host": "127.0.0.1",
+        "port": 24689,
+        "timeout_seconds": 3.0
+      }
+    },
+    "capture": {
+      "output_directory": "runs",
+      "layout": {
+        "top": {
+          "left": 617,
+          "top": 33,
+          "width": 635,
+          "height": 381
+        },
+        "bottom": {
+          "left": 680,
+          "top": 414,
+          "width": 508,
+          "height": 381
+        }
+      },
+      "auto_split": {
+        "enabled": false,
+        "top_fraction": 0.67,
+        "gap_pixels": 0
+      },
+      "calibrated_client_size": {
+        "width": 1870,
+        "height": 824
+      },
+      "focus_before_capture": false
+    },
+    "input": {
+      "backend": "keyboard",
+      "press_seconds": 0.075,
+      "settle_seconds": 0.09,
+      "keys": {
+        "a": "z",
+        "b": "x",
+        "x": "c",
+        "y": "v",
+        "dpad_up": "up",
+        "dpad_down": "down",
+        "dpad_left": "left",
+        "dpad_right": "right",
+        "circle_up": "w",
+        "circle_down": "s",
+        "circle_left": "a",
+        "circle_right": "d",
+        "l": "q",
+        "r": "e",
+        "start": "enter",
+        "select": "backspace"
+      }
+    },
+    "recording": {
+      "screenshot_every_action": true,
+      "capture_delay_seconds": 0.04
+    },
+    "vision": {
+      "title": {
+        "template": "assets/templates/omega_ruby_title_logo.png",
+        "roi": {
+          "left": 65,
+          "top": 35,
+          "width": 505,
+          "height": 300
+        },
+        "orb_features": 1000,
+        "ratio_test": 0.75,
+        "minimum_good_matches": 28,
+        "maximum_good_matches_for_full_confidence": 100,
+        "required_consecutive_frames": 2
+      },
+      "loading": {
+        "dark_mean_threshold": 12.0,
+        "dark_pixel_fraction_threshold": 0.92
+      },
+      "monitor_interval_seconds": 0.2,
+      "learned_scene_model": {
+        "path": "assets/models/oras_scene_knn_v1.npz",
+        "k": 5,
+        "minimum_similarity": 0.15,
+        "minimum_confidence": 0.5
+      }
+    },
+    "agent": {
+      "title_start": {
+        "timeout_seconds": 30.0,
+        "post_start_wait_seconds": 1.5,
+        "maximum_start_presses": 2,
+        "stop_after_title_exit": true
+      }
+    },
+    "monitor": {
+      "pause_when_emulator_unfocused": true
+    },
+    "player_profile": {
+      "gender": "boy",
+      "name": "JONAS",
+      "starter": "treecko",
+      "starter_nickname": null
+    },
+    "intro_agent": {
+      "timeout_seconds": 1800,
+      "automate_overworld_navigation": false,
+      "first_battle_move": "Absorber"
+    },
+    "route_agent": {
+      "demo_run": "runs/20260720T141317.484152Z",
+      "route_json": "assets/routes/intro_route_v1.json",
+      "route_features": "assets/routes/intro_route_v1.npz",
+      "pass_similarity": 0.56,
+      "strong_similarity": 0.68,
+      "minimum_visual_change": 0.012,
+      "lookahead_steps": 18,
+      "maximum_failures": 3,
+      "movement_duration_scale": 1.0,
+      "maximum_hold_seconds": 2.75,
+      "recovery_duration_scale": 0.42
+    }
+  }
+}
